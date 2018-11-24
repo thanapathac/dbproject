@@ -1,0 +1,43 @@
+
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="edit.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+<body>
+	<div class="pink">
+	<p><img src="logo.png" style=" width: 60"> Sport Center</p>
+	</div>
+	<div>
+		<h1>SEARCH EQUIPMENT</h1>
+	</div>
+	<div class="main">
+		<img src="search.png">
+	</div>
+	<div class="finditem">
+	<form>
+		<div class="form-group">
+			<input type="text" class="form-control"  name="type" placeholder="search what you want">
+		</div>
+	</form>
+	</div>
+	<form>
+		<div class="form-group">
+			<button id="myButton" class="float-left submit-button" >Search</button>
+
+		<script type="text/javascript">
+    	document.getElementById("myButton").onclick = function () {
+        	location.href = "search/searchPage.html";
+    	};
+		</script>
+		</div>		
+	</form>
+	
+	<div id="expection">
+		<p>Example : football, shoe, racetrack, training equiment</p>
+	</div>
+	
+</body> 
+</html>
