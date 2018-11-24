@@ -10,6 +10,7 @@
 	$dbname = "registration";
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
+
 	// Check connection
 	if ($conn->connect_error) {
     	die("Connection failed: " . $conn->connect_error);
@@ -17,11 +18,13 @@
 
 	// sql to delete a record
 	$user = $_POST['username'];
-	$sql = "DELETE FROM users WHERE username='$user'";
+	$pass = $_POST['password'];
+	$sql = "DELETE memberreserve FROM member NATURAL JOIN memberreserve  WHERE MemberID='$user' and Password='$pass' ";
 
 	if ($conn->query($sql) == TRUE) {
- 		redirect();
+ 		//redirect();
  		//echo $_POST['username'];
+		echo 'asdasdasdsadasdasfas';
 	} else {
     	echo "Error deleting record: " . $conn->error;
 	}
