@@ -18,7 +18,6 @@ $conn = mysqli_connect("$servername","$username","$password","$dbname");
 //     }
 if(isset($_POST["sent"])){
 	$action=$_POST["sent"];
-
 	$query = "SELECT * FROM employee WHERE sname = '$action'";
  	$show = mysqli_query($conn, $query) or die ("Error");
  	echo "<table border='2px' align = 'center' ><tr><td>sid</td><td>sname</td><td>did</td></tr>";
