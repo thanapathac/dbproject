@@ -33,6 +33,18 @@ h1{
 }
 
 
+.btn {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.btn-primary{
+	background-color: #a0d780!important;
+	border-color: transparent;
+}
+
 #findItem input[type="text"]{
 	text-align: center;
 	margin-top: 80px;
