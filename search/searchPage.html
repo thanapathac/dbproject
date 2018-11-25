@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Search</title>
+	<meta charset="UTF-8"> 
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="edit.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<div class="pink">
@@ -24,26 +26,33 @@
 		</div>
 	</form>
 	</div>-->
-	<select class="form-control">
-  		<option>Default select</option>
-  		<option>Footsal Ball</option>
-  		<option>Basketball Ball</option>
-  		<option>Shuttlecock</option>
-  		<option>Badminton Racket</option>
-  		<option>Volleyball Ball</option>
-  		<option>Tennis Racket</option>
-  		<option>Tennis Ball</option>
-  		<option>Bats</option>
-  		<option>Pingpong Ball</option>
-  		<option>Weight Lifting</option>
-	</select>
+	<form id = "search">
+		<select class="form-control">
+	  		<option data-id= "Default select">Default select</option>
+	  		<option data-id= "Footsal Ball">Footsal Ball</option>
+	  		<option data-id= "Basketball Ball">Basketball Ball</option>
+	  		<option data-id= "Shuttlecock">Shuttlecock</option>
+	  		<option data-id= "Badminton Racket">Badminton Racket</option>
+	  		<option data-id= "Volleyball Ball">Volleyball Ball</option>
+	  		<option data-id= "Tennis Racket">Tennis Racket</option>
+	  		<option data-id= "Tennis Ball">Tennis Ball</option>
+	  		<option data-id= "Bats">Bats</option>
+	  		<option data-id= "Pingpong Ball">Pingpong Ball</option>
+	  		<option data-id= "Weight Lifting">Weight Lifting</option>
+		</select>
+	</form>
 
-	<div class="text-center">
-		<button type="button" class="btn btn-primary btn-outline">SEARCH</button>
+	<div id ="content"></div>
 
-	</div>
+	<form id = "go">
+		<div class="text-center">
+			<button type="button" id="event" class="btn btn-primary btn-outline">SEARCH</button>
+
+		</div>
+	</form>
 	<!--<div id="expection">
 		<p>Example : football, shoe, racetrack, training equiment</p>
 	</div>-->
+	<script type="text/javascript" src="lib/pull.js"></script>
 </body> 
 </html>
