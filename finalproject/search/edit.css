@@ -1,0 +1,82 @@
+.pink {
+	background-color : #cb96c2!important;
+}
+
+.pink img{
+	height: auto;
+	margin-left: 100px; 
+}
+.pink p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: #FFE9E9;
+}
+
+h1{
+	text-align: center;
+ 	margin-top: 1%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60;
+
+}
+
+.main img {
+	width : 15%; 
+	padding-top: 2%;
+	padding-bottom:2%;
+	min-width: 200px ;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.btn {
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.btn-primary{
+	background-color: #a0d780!important;
+	border-color: transparent;
+}
+
+#findItem input[type="text"]{
+	text-align: center;
+	margin-top: 80px;
+	height: 45px; 
+	width: 600px;
+	box-sizing: border-box;
+}
+
+#findItem{
+	text-align: center
+}
+
+#expection p{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.form-group{
+	margin-top: 45px;
+	max-height: 60px;
+	max-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.form-control{
+	margin: 0 auto;
+	text-align: center;
+	max-width: 30%;
+}
+
+#content{
+	margin: 0 auto;
+	text-align: center;
+}

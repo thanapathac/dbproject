@@ -1,21 +1,22 @@
 <html>
 <head>
   <title>Registeration</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
   <div class="pink">
-    <p><img src="logo.png" style="width: 60">Sport Center</p>
+    <p><img src="logo.png" style="width: 60"> Sport Center</p>
   </div>
 
- <!--  <div class="header">
+  <div class="header">
     <h2>Registeration</h2>
-  </div> -->
+  </div>
    
-  <!-- <form method="post" action="insert2.php">
+  <form method="post" action="insert2.php">
     <div class="input-group">
       <label>Username</label>
       <input type="text" name="username" >
@@ -38,7 +39,7 @@
     <div class="input-group">
       <button type="submit" class="btn" name="login_user">Register</button>
     </div>
-  </form> -->
+  </form>
 
   </form>
 </body>
