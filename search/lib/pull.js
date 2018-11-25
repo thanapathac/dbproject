@@ -18,6 +18,12 @@ $("#event").on("click",function(){
 			success: function (data) {
 				$("#content").css("margin-top","50px");
 				$("#content").html(data);
+				$(".table").css("max-width","900px");
+				$(".table").css("margin","0 auto");
+				$(".bgthead").css("background-color", "#8F3D82");
+				$(".textTable").css("color","white");
+				$(".textTable").css("text-align","center");
+				$(".bg").css("background-color", "#F7EBF5")
 				$(".main").hide();
 				$(".form-control").css("margin-top","30px");
 				

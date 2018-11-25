@@ -2,7 +2,7 @@
 $servername = "127.0.0.1:3306";
 $username = "root";
 $password = "09a94FDE42739";
-$dbname = "homework";
+$dbname = "dbproject";
 
 $conn = mysqli_connect("$servername","$username","$password","$dbname");
 /*$conn = new PDO("mysql:host=127.0.0.1:3306;dbname=homework", $username, $password);*/
@@ -18,14 +18,31 @@ $conn = mysqli_connect("$servername","$username","$password","$dbname");
 //     }
 if(isset($_POST["sent"])){
 	$action=$_POST["sent"];
-	$query = "SELECT * FROM employee WHERE sname = '$action'";
+	$query = "SELECT * FROM supplier NATURAL JOIN suppliertype WHERE SType = '$action'";
  	$show = mysqli_query($conn, $query) or die ("Error");
- 	echo "<table border='2px' align = 'center' ><tr><td>sid</td><td>sname</td><td>did</td></tr>";
+ 	echo "<table class='table'>
+  <thead class='bgthead'>
+    <tr>
+      <th scope='col' class ='textTable col-centered' style='max-width: 16.66%'>COMPANY NAME</th>
+      <th scope='col' class ='textTable col-centered' style='max-width: 16.66%'>ADDRESS</th>
+      <th scope='col' class ='textTable col-centered' style='max-width: 16.66%'>TEL_NUMBER</th>
+    </tr>
+  </thead>
+  <tbody>";
 
  	while($row = mysqli_fetch_array($show)){
-		echo "<tr><td>" . $row['sid'] . "</td><td>" .$row["sname"] . "</td><td>" . $row["did"] . "</td></tr>";
+		echo "<tr>
+			      <th scope='row' style='max-width: 16.66%' class='bg'>" . $row['SCompanyName'] ."</th>
+			      <td style='max-width: 16.66%' class='bg'>".$row["Address"] . "</td>
+			      <td style='max-width: 16.66%' class='bg'>" . $row["Tel_Number"] . "</td>
+			    </tr>";
  	}
- 	echo "</table>";
+ 	echo "</tbody>
+		</table>";
 }
 
 ?> 
+
+
+    <!-- "<tr><td>" . $row['SCompanyName'] . "</td><td>" .$row["Address"] . "</td><td>" . $row["Tel_Number"] . "</td></tr>"; -->
+		
